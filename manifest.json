@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Анализатор производительности",
+  "version": "1.0",
+  "description": "Данное расширение поможет разработчикам просматривать производительность сайта и анализировать работу.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
